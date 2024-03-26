@@ -9,5 +9,4 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
-content/_templates
-content/_development
+content/_development/_secret
