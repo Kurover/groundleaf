@@ -30,13 +30,13 @@ export default {
       darkMode: "Dark mode",
     },
     explorer: {
-      title: "Explorer",
+      title: "Content",
     },
     footer: {
       createdWith: "Created with",
     },
     graph: {
-      title: "Graph View",
+      title: "Relation",
     },
     recentNotes: {
       title: "Recent Notes",
