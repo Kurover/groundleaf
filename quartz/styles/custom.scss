@@ -2,6 +2,11 @@
 
 // put your custom CSS here!
 
+// @! CUSTOM CSS
+img[alt=block] {
+	display: block;
+}
+
 // Dark mode custom, use config.ts. It's here too just for reminder tehee
 // :root[saved-theme=dark] {
     // --light: #0A0C10 !important; // Background
@@ -38,4 +43,3 @@ pre > .clipboard-button {
 	gap: 1.4rem;
 	padding: 0 3rem;
 }
-
