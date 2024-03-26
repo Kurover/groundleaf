@@ -2,6 +2,18 @@
 
 // put your custom CSS here!
 
+// Dark mode custom, use config.ts. It's here too just for reminder tehee
+// :root[saved-theme=dark] {
+    // --light: #0A0C10 !important; // Background
+    // --lightgray: #393639; // Element like search
+    // --gray: #646464; // Not sure
+    // --darkgray: #E7E6EB; // Text, paragraph
+    // --dark: #E7E6EB !important; // Text, header
+    // --secondary: #78BB52 !important; // Links
+    // --tertiary: #89f86f !important; // Link hover
+    // --highlight: #8f9fa926; // Not sure
+// }
+
 // Codeblock from Obsidian to be used as "notes". Wrapped and no copy button
 pre > code {
 	text-wrap: wrap;
@@ -14,9 +26,16 @@ pre > .clipboard-button {
 	display: block;
 }
 // Allow sidebar to scroll when overflow
-#quartz-body .sidebar.right {
-    right: calc(50vw - 755px);
-    max-height: calc(100% - 6rem);
-    overflow-y: scroll;
-    overflow-x: hidden;
+// #quartz-body .sidebar.right {
+//     right: calc(50vw - 755px);
+//     max-height: calc(100% - 6rem);
+//     overflow-y: scroll;
+//     overflow-x: hidden;
+// }
+
+// Reduce gap between modules
+.page > #quartz-body .sidebar {
+	gap: 1.4rem;
+	padding: 0 3rem;
 }
+
