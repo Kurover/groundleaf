@@ -8,7 +8,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
 	  Home: "https://kurover.github.io",
-      GitHub: "https://github.com/Kurover/quartz-glp",
+      GitHub: "https://github.com/Kurover/groundleaf",
     },
   }),
 }
@@ -36,9 +36,7 @@ export const defaultContentPageLayout: PageLayout = {
 	Component.MobileOnly(Component.Explorer({
 		title: "Content",
 	})),
-    Component.Backlinks({
-		title: "Related",
-	}),
+    Component.Backlinks(),
   ],
 }
 
