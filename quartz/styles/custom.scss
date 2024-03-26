@@ -1,3 +1,4 @@
+@use "./variables.scss" as *;
 @use "./base.scss";
 
 // put your custom CSS here!
@@ -5,6 +6,16 @@
 // @! CUSTOM CSS
 img[alt=block] {
 	display: block;
+}
+
+// CSS Hack to inline Theme Toggle with searchbar
+@media (min-width: calc($fullPageWidth + 1px)) {
+	.darkmode {
+		position: absolute;
+		margin: 0;
+		left: 18rem;
+		top: calc(4rem - 1px);
+	}
 }
 
 // Dark mode custom, use config.ts. It's here too just for reminder tehee
