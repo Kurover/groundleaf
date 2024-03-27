@@ -15,12 +15,12 @@ export default ((opts?: Options) => {
       <footer class={`${displayClass ?? ""}`}>
         <hr />
         <p>
-          Created by Zanster. Powered with <a href="https://quartz.jzhao.xyz/">Quartz</a> v{version}
+          Created by Zanster. Powered with <a href="https://quartz.jzhao.xyz/" target="_blank">Quartz</a> v{version}
         </p>
         <ul>
           {Object.entries(links).map(([text, link]) => (
             <li>
-              <a href={link}>{text}</a>
+              <a href={link} target="_blank">{text}</a>
             </li>
           ))}
         </ul>
