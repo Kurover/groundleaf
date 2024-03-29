@@ -64,3 +64,7 @@ button#explorer {
 		max-height: calc(100vh - 18rem);
 	}
 }
+// "I should learn how to code but I don't wanna" CSS hack to hide folder content if it has index.md
+.page .center > .popover-hint:has(> article > p:nth-child(2):not(:empty)) > .page-listing {
+	display: none
+}
