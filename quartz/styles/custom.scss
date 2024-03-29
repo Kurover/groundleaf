@@ -66,5 +66,16 @@ button#explorer {
 }
 // "I should learn how to code but I don't wanna" CSS hack to hide folder content if it has index.md
 .page .center > .popover-hint:has(> article > p:nth-child(2):not(:empty)) > .page-listing {
-	display: none
+	display: none;
+}
+.popover .popover-hint:has(> article > p:nth-child(2):not(:empty)) > .page-listing {
+	display: none;
+}
+
+// Reduce Popover content margin
+.popover .article-title {
+	margin-top: .5rem;
+}
+.popover .popover-hint > p:last-child {
+	margin-bottom: 0;
 }
