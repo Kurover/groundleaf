@@ -1,13 +1,12 @@
 ---
 tags:
-  - frostkin
-  - adept-ice
+  - adept/ice
+  - race/frostkin
 ---
-## Stylla Sky
-![[stylla-portrait.png|block|250]]
+![[stylla-portrait.webp|block|300]]
 Frostkin, Ice
 
-She is a short variant of Frostkin. Her long fluffy ears set her apart with the rest of the population of Grondvale. Her skin is as pale as ice unlike her eyes that is full of oceanic life. She has a short light brown hair but interestingly it's oddly translucent in certain angles.
+She is a short variant of [[Frostkin]]. Her long fluffy ears set her apart with the rest of the population of Grondvale. Her skin is as pale as ice unlike her eyes that is full of oceanic life. She has a short light brown hair but interestingly it's oddly translucent in certain angles.
 
 She's one of few who managed to exit the frozen seas up north, an infamous "one-way" path to the north region. Her arrival upon Grondvale is a curious one, because the average temperature isn't ideal for her kind here. Her claim here is to look for cultural experiences.
 
