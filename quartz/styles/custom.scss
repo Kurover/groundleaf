@@ -3,21 +3,70 @@
 
 // put your custom CSS here!
 
-// @! CUSTOM CSS
+// @! CUSTOM UTILITY CSS
 img[alt=block] {
 	display: block;
 }
 
-// CSS Hack to inline Theme Toggle with searchbar
+// CSS Hack to inline Theme Toggle with searchbar, also style it to look like searchbar
+.darkmode {
+	background-color: var(--lightgray);
+	border-radius: 4px;
+	min-width: 2rem;
+	width: 2rem;
+	height: 2rem;
+	& svg {
+		left: calc(50% - 10px);
+	}
+}
 @media (min-width: calc($fullPageWidth + 1px)) {
 	.darkmode {
 		position: absolute;
 		margin: 0;
 		left: 18rem;
-		top: calc(4rem - 1px);
+		top: calc(4rem - 5px);
 	}
 }
-
+// Searchbar mobile styling style
+@media (max-width: $fullPageWidth) {
+	.search {
+		flex-grow: .33;
+	}
+	.search > #search-icon {
+		flex-direction: column;
+		& > p {
+			display: none;
+		}
+		& > svg {
+			height: 2rem;
+		}
+	}
+}
+// Separate title and other component on smaller mobile screen, also centers it
+@media (max-width: $mobileBreakpoint) {
+	.page > #quartz-body .sidebar.left {
+		flex-wrap: wrap;
+	}
+	.sidebar.left > .page-title + .spacer {
+		flex: 100%;
+		margin-top: 1rem;
+	}
+	.sidebar.left {
+		justify-content: center;
+	}
+}
+// Remove padding on sidebar for smaller screen, uses #quartz-root for higher specificity
+@media (max-width: $mobileBreakpoint) {
+	#quartz-root > #quartz-body .sidebar.left {
+		padding: 0;
+	}
+	#quartz-root > #quartz-body .sidebar.right {
+		padding: 0 1rem;
+		> * {
+			min-width: calc(240px - 1rem);
+		}
+	}
+}
 // Dark mode custom, use config.ts. It's here too just for reminder tehee
 // :root[saved-theme=dark] {
     // --light: #0A0C10 !important; // Background
@@ -41,13 +90,6 @@ pre > .clipboard-button {
 #explorer-content a {
 	display: block;
 }
-// Allow sidebar to scroll when overflow
-// #quartz-body .sidebar.right {
-//     right: calc(50vw - 755px);
-//     max-height: calc(100% - 6rem);
-//     overflow-y: scroll;
-//     overflow-x: hidden;
-// }
 
 // Reduce gap between modules
 .page > #quartz-body .sidebar {
@@ -61,7 +103,15 @@ button#explorer {
 // Increase Explorer max-height on desktop
 @media (min-width: calc($fullPageWidth + 1px)) {
 	ul.overflow, ol.overflow {
-		max-height: calc(100vh - 18rem);
+		max-height: calc(100vh - 19rem);
+	}
+}
+// Fix Explorer fading mask thingie if on right sidebar
+@media (max-width: $fullPageWidth) {
+	.sidebar.right ul.overflow::after,
+	.sidebar.right ol.overflow::after {
+		display: inline-block;
+		position: sticky;
 	}
 }
 // "I should learn how to code but I don't wanna" CSS hack to hide folder content if it has index.md
