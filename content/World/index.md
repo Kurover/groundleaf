@@ -1,4 +1,5 @@
 ---
 title: World
 ---
-Placeholder of Wolrd
+Placeholder of World
+- [[World/Race Variant/index|Race Variant]]

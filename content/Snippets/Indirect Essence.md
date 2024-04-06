@@ -1,0 +1,1 @@
+Indirect essence is the effect of essence when they are interacted or being near them, e.g., overload, nausea from potent essence source, and arts that affect internally like water mend and mystic fire burn. This term is usually associated with [[Neutral]].

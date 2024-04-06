@@ -1,0 +1,3 @@
+Also known as "Impure". An uncommon variant who does not have any innate essence nor the ability to detect and manipulate it. One can be randomly born as neutral, hence the term impure.
+
+They are unaffected by [[Indirect Essence]] and undetectable by probing the essence. This allow them to do activities that is normally impossible for the others like mining pure gemstone, harvesting presence-sensitive plants, and ambushing threatening beasts.
