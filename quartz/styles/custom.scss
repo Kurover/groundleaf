@@ -68,6 +68,9 @@ button#explorer {
 .page .center > .popover-hint:has(> article > p:nth-child(2):not(:empty)) > .page-listing {
 	display: none;
 }
+.preview-inner:has(> article > p:nth-child(2):not(:empty)) > .page-listing {
+	display: none;
+}
 .popover .popover-hint:has(> article > p:nth-child(2):not(:empty)) > .page-listing {
 	display: none;
 }
