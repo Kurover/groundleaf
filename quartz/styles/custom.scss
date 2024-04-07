@@ -137,10 +137,13 @@ button#explorer {
 	display: none;
 }
 
-// Reduce Popover content margin
+// Reduce Popover content spacing
 .popover .article-title {
 	margin-top: .5rem;
 }
-.popover .popover-hint > p:last-child {
-	margin-bottom: 0;
+.popover .popover-inner {
+	padding-bottom: 0;
+}
+.breadcrumb-container {
+    margin-top: 1rem;
 }
