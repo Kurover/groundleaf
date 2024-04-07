@@ -8,37 +8,49 @@ img[alt=block] {
 	display: block;
 }
 
-// CSS Hack to inline Theme Toggle with searchbar, also style it to look like searchbar
-.darkmode {
-	background-color: var(--lightgray);
-	border-radius: 4px;
-	min-width: 2rem;
-	width: 2rem;
-	height: 2rem;
-	& svg {
-		left: calc(50% - 10px);
-	}
+// Left sidebar row mode to allow smaller component stacks
+.page > #quartz-body .sidebar.left {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.sidebar.left > .explorer {
+	flex: 100%;
 }
 @media (min-width: calc($fullPageWidth + 1px)) {
 	.darkmode {
-		position: absolute;
 		margin: 0;
-		left: 18rem;
-		top: calc(4rem - 5px);
+	}
+}
+// Style darkmode to be like searchbar
+.darkmode {
+	background-color: var(--lightgray);
+	border-radius: 4px;
+	width: 2rem;
+	height: 2rem;
+	& svg {
+		padding: calc(1rem - 10px); // (.darkmode-Width / 2) - (svg.Width /2)
+		top: unset;
 	}
 }
 // Searchbar mobile styling style
+.search {
+	flex-grow: 1;
+	max-width: unset;
+}
 @media (max-width: $fullPageWidth) {
 	.search {
-		flex-grow: .33;
+		max-width: 6rem;
 	}
 	.search > #search-icon {
-		flex-direction: column;
 		& > p {
 			display: none;
 		}
+		& > div {
+			flex-grow: unset;
+		}
 		& > svg {
 			height: 2rem;
+			margin: auto;
 		}
 	}
 }
@@ -63,7 +75,7 @@ img[alt=block] {
 	#quartz-root > #quartz-body .sidebar.right {
 		padding: 0 1rem;
 		> * {
-			min-width: calc(240px - 1rem);
+			min-width: calc(240px - 2rem);
 		}
 	}
 }
