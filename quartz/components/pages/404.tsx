@@ -4,7 +4,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 const NotFound: QuartzComponent = ({ cfg }: QuartzComponentProps) => {
   return (
     <article class="popover-hint">
-      <h1>404</h1>
+      <h1>Sorry!</h1>
       <p>{i18n(cfg.locale).pages.error.notFound}</p>
     </article>
   )

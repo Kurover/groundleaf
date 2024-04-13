@@ -48,7 +48,7 @@ export default {
     },
     search: {
       title: "Search",
-      searchBarPlaceholder: "Search for something",
+      searchBarPlaceholder: "What are you looking for?",
     },
     tableOfContents: {
       title: "Table of Contents",
@@ -63,13 +63,13 @@ export default {
       lastFewNotes: ({ count }) => `Last ${count} notes`,
     },
     error: {
-      title: "Not Found",
-      notFound: "Either this page is private or doesn't exist.",
+      title: "Page Missing",
+      notFound: "The page you're looking for is unavailable.",
     },
     folderContent: {
       folder: "Folder",
       itemsUnderFolder: ({ count }) =>
-        count === 1 ? "1 item under this folder." : `${count} items under this folder.`,
+        count === 1 ? "1 item under this folder." : `${count} items in this section.`,
     },
     tagContent: {
       tag: "Tag",

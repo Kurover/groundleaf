@@ -67,6 +67,15 @@ img[alt=block] {
 		justify-content: center;
 	}
 }
+// Reorder right sidebar content on small mobile to show backlink first then site content
+@media (max-width: $mobileBreakpoint) {
+	.sidebar.right .backlinks {
+		order: 1;
+	}
+	.sidebar.right .explorer {
+		order: 2;
+	}
+}
 // Remove padding on sidebar for smaller screen, uses #quartz-root for higher specificity
 @media (max-width: $mobileBreakpoint) {
 	#quartz-root > #quartz-body .sidebar.left {
@@ -127,14 +136,22 @@ button#explorer {
 	}
 }
 // "I should learn how to code but I don't wanna" CSS hack to hide folder content if it has index.md
-.page .center > .popover-hint:has(> article > p:nth-child(2):not(:empty)) > .page-listing {
+.hide-folder-content {
 	display: none;
 }
-.preview-inner:has(> article > p:nth-child(2):not(:empty)) > .page-listing {
+.popover-hint:has(> article > .hide-folder-content) > .page-listing,
+.preview-inner:has(> article > .hide-folder-content) > .page-listing {
 	display: none;
 }
-.popover .popover-hint:has(> article > p:nth-child(2):not(:empty)) > .page-listing {
-	display: none;
+
+// Folder content style
+.page-listing ul.section-ul {
+	list-style: "♦";
+	padding-left: 1rem;
+	margin-top: 0;
+}
+.page-listing li.section-li > .section {
+	margin-left: .5rem
 }
 
 // Reduce Popover content spacing
@@ -145,5 +162,8 @@ button#explorer {
 	padding-bottom: 0;
 }
 .breadcrumb-container {
-    margin-top: 1rem;
+	margin-top: 1rem;
+}
+.popover-hint h1 {
+	margin-top: 1rem;
 }
