@@ -5,4 +5,6 @@ Fluifia has high affinity with water essence, making them water adept by default
 
 They have difficulty with manipulating other essences, so most of them will only know water arts. They are the first to invent wound mending water arts that can be applied to other without causing overload, although only Fluifia can do them correctly.
 
-While they are amazing with water essence, they are still susceptible to drowning and is recorded to do so in normal rate.
+> [!info]+ Note
+> While they are an amazing water adept in nature, they are still susceptible to drowning!
+> 
