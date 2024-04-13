@@ -69,7 +69,7 @@ export default {
     folderContent: {
       folder: "Folder",
       itemsUnderFolder: ({ count }) =>
-        count === 1 ? "1 item under this folder." : `${count} items in this section.`,
+        count === 1 ? "1 item in this section." : `${count} items in this section.`,
     },
     tagContent: {
       tag: "Tag",
