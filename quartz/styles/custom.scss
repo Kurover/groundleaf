@@ -167,3 +167,11 @@ button#explorer {
 .popover-hint h1 {
 	margin-top: 1rem;
 }
+
+// Bottom border on content if no side-content
+@media (max-width: $fullPageWidth) {
+	#quartz-body > .center {
+		border-bottom: 1px solid var(--lightgray);
+		padding-bottom: 1rem;
+	}
+}
