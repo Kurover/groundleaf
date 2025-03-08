@@ -28,8 +28,8 @@ img[alt=block] {
 	width: 2rem;
 	height: 2rem;
 	& svg {
-		padding: calc(1rem - 10px); // (.darkmode-Width / 2) - (svg.Width /2)
-		top: unset;
+		padding: 0 calc(1rem - 10px); // (.darkmode-Width / 2) - (svg.Width /2)
+		// top: unset;
 	}
 }
 // Searchbar mobile styling style
