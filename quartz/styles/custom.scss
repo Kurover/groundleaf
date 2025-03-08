@@ -13,9 +13,9 @@ img[alt=block] {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-.sidebar.left > .explorer {
-	flex: 100%;
-}
+//.sidebar.left > .explorer {
+//	flex: 100%;
+//}
 @media (min-width: calc($pageWidth + 1px)) {
 	.darkmode {
 		margin: 0;
@@ -31,6 +31,10 @@ img[alt=block] {
 		padding: 0 calc(1rem - 10px); // (.darkmode-Width / 2) - (svg.Width /2)
 		// top: unset;
 	}
+}
+// Hamburger menu style
+.explorer #mobile-explorer {
+	margin-right: 12px;
 }
 // Searchbar mobile styling style
 .search {
