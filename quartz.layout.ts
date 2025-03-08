@@ -30,11 +30,8 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.DesktopOnly(Component.Graph()),
+    Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
-		Component.MobileOnly(Component.Explorer({
-		folderDefaultState: "open",
-	})),
     Component.Backlinks(),
   ],
 }
@@ -50,10 +47,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-	Component.MobileOnly(Component.Explorer({
-		folderDefaultState: "open",
-	})),
-	Component.DesktopOnly(Component.Graph()),
+	Component.Graph(),
 	Component.Backlinks(),
   ],
 }
