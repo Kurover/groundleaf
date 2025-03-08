@@ -55,16 +55,6 @@ img[alt=block] {
 		}
 	}
 }
-
-// Reorder right sidebar content on small mobile to show backlink first then site content
-@media (max-width: $mobileBreakpoint) {
-	.sidebar.right .backlinks {
-		order: 1;
-	}
-	.sidebar.right .explorer {
-		order: 2;
-	}
-}
 // Not needed on newer update
 // Remove padding on sidebar for smaller screen, uses #quartz-root for higher specificity
 // @media (max-width: $mobileBreakpoint) {
