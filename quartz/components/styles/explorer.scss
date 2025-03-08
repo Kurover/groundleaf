@@ -105,6 +105,9 @@ button#desktop-explorer {
     transform: rotateZ(-90deg);
   }
 }
+button#desktop-explorer {
+	pointer-events: none;
+}
 
 .folder-outer {
   display: grid;
