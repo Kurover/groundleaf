@@ -16,7 +16,7 @@ img[alt=block] {
 .sidebar.left > .explorer {
 	flex: 100%;
 }
-@media (min-width: calc($fullPageWidth + 1px)) {
+@media (min-width: calc($pageWidth + 1px)) {
 	.darkmode {
 		margin: 0;
 	}
@@ -37,7 +37,7 @@ img[alt=block] {
 	flex-grow: 1;
 	max-width: unset;
 }
-@media (max-width: $fullPageWidth) {
+@media (max-width: $pageWidth) {
 	.search {
 		max-width: 6rem;
 	}
@@ -76,18 +76,19 @@ img[alt=block] {
 		order: 2;
 	}
 }
+// Not needed on newer update
 // Remove padding on sidebar for smaller screen, uses #quartz-root for higher specificity
-@media (max-width: $mobileBreakpoint) {
-	#quartz-root > #quartz-body .sidebar.left {
-		padding: 0;
-	}
-	#quartz-root > #quartz-body .sidebar.right {
-		padding: 0 1rem;
-		> * {
-			min-width: calc(240px - 2rem);
-		}
-	}
-}
+// @media (max-width: $mobileBreakpoint) {
+// 	#quartz-root > #quartz-body .sidebar.left {
+// 		padding: 0;
+// 	}
+// 	#quartz-root > #quartz-body .sidebar.right {
+// 		padding: 0 1rem;
+// 		> * {
+// 			min-width: calc(240px - 2rem);
+// 		}
+// 	}
+// }
 // Dark mode custom, use config.ts. It's here too just for reminder tehee
 // :root[saved-theme=dark] {
     // --light: #0A0C10 !important; // Background
@@ -122,13 +123,13 @@ button#explorer {
 	pointer-events: none;
 }
 // Increase Explorer max-height on desktop
-@media (min-width: calc($fullPageWidth + 1px)) {
+@media (min-width: calc($pageWidth + 1px)) {
 	ul.overflow, ol.overflow {
 		max-height: calc(100vh - 19rem);
 	}
 }
 // Fix Explorer fading mask thingie if on right sidebar
-@media (max-width: $fullPageWidth) {
+@media (max-width: $pageWidth) {
 	.sidebar.right ul.overflow::after,
 	.sidebar.right ol.overflow::after {
 		display: inline-block;
@@ -169,7 +170,7 @@ button#explorer {
 }
 
 // Bottom border on content if no side-content
-@media (max-width: $fullPageWidth) {
+@media (max-width: $pageWidth) {
 	#quartz-body > .center {
 		border-bottom: 1px solid var(--lightgray);
 		padding-bottom: 1rem;
