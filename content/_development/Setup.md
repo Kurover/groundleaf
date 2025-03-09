@@ -1,0 +1,20 @@
+---
+tags: 
+aliases:
+---
+## Community plugin used during edit
+```json
+[
+  "obsidian-admonition",
+  "obsidian-dictionary-plugin",
+  "editing-toolbar",
+  "find-unlinked-files",
+  "folder-notes",
+  "homepage",
+  "omnisearch",
+  "obsidian-style-settings",
+  "tag-wrangler",
+  "treefocus",
+  "templater-obsidian"
+]
+```
