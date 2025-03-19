@@ -13,6 +13,10 @@ img[alt=block] {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+// Fix flex on v4.5.0
+.sidebar.left {
+	align-content: flex-start;
+}
 //.sidebar.left > .explorer {
 //	flex: 100%;
 //}
@@ -45,17 +49,14 @@ img[alt=block] {
 	flex-grow: 1;
 	max-width: unset;
 }
-@media (max-width: $pageWidth) {
+@media all and ($mobile) {
 	.search {
 		max-width: 6rem;
 		min-width: 2.5rem;
 	}
-	.search > #search-button {
+	.search > .search-button {
 		& > p {
 			display: none;
-		}
-		& > div {
-			flex-grow: unset;
 		}
 		& > svg {
 			height: 2rem;
@@ -99,7 +100,10 @@ pre > .clipboard-button {
 #explorer-content a {
 	display: block;
 }
-
+// ToC "Content" size
+.explorer-toggle > h1 {
+	margin: 0;
+}
 // Reduce gap between modules
 .page > #quartz-body .sidebar {
 	gap: 1.4rem;
@@ -157,9 +161,9 @@ button#desktop-explorer {
 }
 
 // Bottom border on content if no side-content
-@media (max-width: $pageWidth) {
-	#quartz-body > .center {
-		border-bottom: 1px solid var(--lightgray);
-		padding-bottom: 1rem;
-	}
-}
+//@media all and ($mobile) {
+//	#quartz-body > .center {
+//		border-bottom: 1px solid var(--lightgray);
+//		padding-bottom: 1rem;
+//	}
+//}
